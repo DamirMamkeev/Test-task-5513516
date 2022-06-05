@@ -24,6 +24,8 @@ public class SearchCalc extends TestBase {
         driver.findElement(By.xpath("//div[text() = '3']")).click();
         driver.findElement(By.xpath("//div[text() = '+']")).click();
         driver.findElement(By.xpath("//div[text() = '1']")).click();
+        driver.findElement(By.xpath("//div[text() = '+']")).click();
+        driver.findElement(By.xpath("//div[text() = '1']")).click();
         driver.findElement(By.xpath("//div[text() = '=']")).click();
 
         WebDriverWait wait = new WebDriverWait(driver, 10);
