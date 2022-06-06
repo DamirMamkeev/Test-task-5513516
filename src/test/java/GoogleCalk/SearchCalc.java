@@ -26,7 +26,8 @@ public class SearchCalc extends TestBase {
         driver.findElement(By.xpath("//div[text() = '1']")).click();
         driver.findElement(By.xpath("//div[text() = '=']")).click();
 
-        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebDriverWait wait = new WebDriverWait(driver,10);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[@class = 'vUGUtc']")));
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[@class = 'qv3Wpe']")));
 
     }
