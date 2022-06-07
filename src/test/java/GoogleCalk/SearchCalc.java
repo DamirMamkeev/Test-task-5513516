@@ -26,9 +26,11 @@ public class SearchCalc extends TestBase {
         driver.findElement(By.xpath("//div[text() = '1']")).click();
         driver.findElement(By.xpath("//div[text() = '=']")).click();
 
-        WebDriverWait wait = new WebDriverWait(driver,10);
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[@class = 'vUGUtc']")));
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[@class = 'qv3Wpe']")));
+        WebDriverWait wait1 = new WebDriverWait(driver,10);
+        wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[@class = 'vUGUtc']")));
+
+        WebDriverWait wait2 = new WebDriverWait(driver,10);
+        wait2.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[@class = 'qv3Wpe']")));
 
     }
 
